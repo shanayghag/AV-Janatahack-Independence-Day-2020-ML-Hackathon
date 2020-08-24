@@ -17,4 +17,26 @@ Note that a research article can possibly have more than 1 topic. The research a
   <li>Quantitative Finance</li>
 </ul>
 </p>
+<h2>Data :</h2>
+<ul>
+  <li><a href="https://datahack.analyticsvidhya.com/contest/janatahack-independence-day-2020-ml-hackathon/download/train-file">Train data</a></li>
+  <li><a href="https://datahack.analyticsvidhya.com/contest/janatahack-independence-day-2020-ml-hackathon/download/test-file">Test data</a></li>
+</ul>
+<p>
+  <h2>Models :</h2>
+  <ul>
+  <li>
+    <h3>BERT</h3>
+    <p>
+      A language representation model, which stands for Bidirectional Encoder Representations from Transformers. BERT is a multi-layer bidirectional Transformer's encoder stack.
+      <ul>
+        <li>
+          <h4>Architecture for multi-label classification:</h4>
+          Pooled outputs + Classification Layer
+        </li>
+      <ul>
+    </p>
+  </li>
+  </ul>
+</p>
 </p>
