@@ -32,7 +32,10 @@ Note that a research article can possibly have more than 1 topic. The research a
       <ul>
         <li>
           <h4>Architecture for multi-label classification:</h4>
-          Pooled outputs + Classification Layer
+          <ol>
+            <li>Pooled outputs + Classification Layer</li>
+            <li>Sequence outputs + Spatial dropout + Mean & Max pooling + Classification layer</li> 
+          </ol>
         </li>
       <ul>
     </p>
