@@ -11,7 +11,7 @@ import transformers
 from config import config
 from dataset import *
 from engine import *
-from model import *
+from rnn_model import *
 
 
 if __name__ == '__main__':
@@ -39,7 +39,12 @@ if __name__ == '__main__':
 
 	b = next(iter(train_dataloader))
 	for k, v in b.items():
-	    print(f'{k} shape: {v.shape}')
+	    if 'model' in k:
+	        print(k)
+	        for k_, v_ in b[k].items():
+	            print(f'{k_} shape: {v_.shape}\n')
+	    else:
+	        print(f'{k} shape: {v.shape}')
 
 
 	# set device

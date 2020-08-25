@@ -84,7 +84,7 @@ if __name__ == '__main__':
 	    num_training_steps=num_training_steps
 	)
 
-
+	classes = train_df.columns.to_list()[3:]
 	# training & validation
 	print('\n--- Training & Validation')
 	max_val_micro_f1_score = float('-inf')
@@ -94,12 +94,13 @@ if __name__ == '__main__':
 	    	device, 
 	    	train_dataloader, 
 	    	val_dataloader, 
+	    	classes,
 	    	criterion, 
 	    	optimizer, 
 	    	scheduler, 
 	    	epoch
     	)
-	    val_micro_f1_score = val(model, device, val_dataloader, criterion)
+	    val_micro_f1_score = val(model, device, val_dataloader, classes, criterion)
 
 	    if config.SAVE_BEST_ONLY:
 	        if val_micro_f1_score > max_val_micro_f1_score:

@@ -27,7 +27,7 @@ if __name__ == '__main__':
 	np.random.shuffle(indices)
 
 	train_indices, val_indices = indices[split:], indices[:split]
-
+	train_indices, val_indices = range(10), range(10)
 
 	# dataset & dataloader
 	print('\n--- Creating Dataset')
@@ -110,5 +110,45 @@ if __name__ == '__main__':
 
 	            print(f'--- Best Model. Val loss: {max_val_micro_f1_score} -> {val_micro_f1_score}')
 	            max_val_micro_f1_score = val_micro_f1_score
+
+
+	# gradient boosting
+	# get scibert's best model embeddings
+	print('\n--- Get SciBERT best_model Embeddings')
+	train_embeddings, train_labels = get_tf_embed(
+	    best_model, 
+	    device,
+	    train_dataloader
+	)
+
+	val_embeddings, val_labels = get_tf_embed(
+	    best_model, 
+	    device,
+	    val_dataloader
+	)
+
+	# init, train, validate xgboost model
+	xgboost_model = xgbmodel(device)
+	print('\n--- Fitting XGBClassifer')
+	xgb_val_micro_f1_score = train_val_grad_boost(
+		xgboost_model,
+	    train_embeddings, 
+	    train_labels, 
+	    val_embeddings, 
+	    val_labels
+	)
+	print('XGBoost Val micro f1 score:', xgb_val_micro_f1_score)
+
+	# init, train, validate lightgbm model
+	lgbm_model = lgbmmodel(device)
+	print('\n--- Fitting LGBMClassifer')
+	lgbm_val_micro_f1_score = train_val_grad_boost(
+		lgbm_model,
+	    train_embeddings, 
+	    train_labels, 
+	    val_embeddings, 
+	    val_labels
+	)
+	print('LGBM Val micro f1 score:', lgbm_val_micro_f1_score)
 
 

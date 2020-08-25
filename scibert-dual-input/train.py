@@ -27,7 +27,6 @@ if __name__ == '__main__':
 	np.random.shuffle(indices)
 
 	train_indices, val_indices = indices[split:], indices[:split]
-	train_indices, val_indices = range(10), range(10)
 
 
 	# dataset & dataloader
