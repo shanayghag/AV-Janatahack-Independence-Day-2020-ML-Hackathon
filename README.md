@@ -190,7 +190,7 @@ It is a BERT model trained on scientific text. SciBERT is trained on papers from
 </p>
 
 <p>
-  <h2>Comparisons :</h2>
+  <h2>Performance of implemented models :</h2>
   <table>
    <thead>
      <td><b>Model</b></td>
