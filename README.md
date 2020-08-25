@@ -193,9 +193,9 @@ It is a BERT model trained on scientific text. SciBERT is trained on papers from
   <h2>Comparisons :</h2>
   <table>
    <thead>
-     <td>Model</td>
-     <td>Public LB f1-micro</td>
-     <td>Private LB f1-micro</td>
+     <td><b>Model</b></td>
+     <td><b>Public LB f1-micro</b></td>
+     <td><b>Private LB f1-micro</b></td>
    </thead>
   <tbody>
     <tr>
