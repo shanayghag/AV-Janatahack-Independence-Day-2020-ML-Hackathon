@@ -95,7 +95,7 @@ Note that a research article can possibly have more than 1 topic. The research a
   <li>
     <h3>Longformer</h3>
      <p>
-       Transformer-based models are unable to process long sequences due to their self-attention operation, which scales quadratically with the sequence length. To address this limitation, we introduce the Longformer with an attention mechanism that scales linearly with sequence length, making it easy to process documents of thousands of tokens or longer.
+       Transformer-based models are unable to process long sequences due to their self-attention operation, which scales quadratically with the sequence length. To address this limitation, the Longformer was introduced with an attention mechanism that scales linearly with sequence length, making it easy to process documents of thousands of tokens or longer.
      </p>
      <ul>
        <li>
@@ -150,6 +150,37 @@ XLnet is an extension of the Transformer-XL model pre-trained using an autoregre
          <h4>Code & Notebooks</h4>
          <ol>
            <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/xlnet-base">xlnet for multi-label classification</a></li>
+         </ol>
+       </li>
+     </ul>
+  </li>
+  
+  <li>
+    <h3>sciBERT</h3>
+     <p>
+It is a BERT model trained on scientific text. SciBERT is trained on papers from the corpus of semanticscholar.org. Corpus size is 1.14M papers, 3.1B tokens
+     </p>
+     <ul>
+       <li>
+         <h4>Architectures for multi-label classification:</h4>
+          <ol>
+            <li>Pooled outputs + Classification Head</li>
+            <li>Sequence outputs + Spatial dropout + BiLstm + Classification Head</li>
+            <li>Dual inputs(single head) + Pooled outputs + Avg pooling + Conactenation + Classification Head</li>
+            <li>Dual inputs(single head) + Sequence outputs + Bi-GRU + Classification Head</li>
+            <li>Scibert embeddings + XGBoost</li>
+            <li>Scibert embeddings + LGBM</li>
+            <li>Scibert + XLNet</li>
+          </ol>
+       </li>
+       <li>
+         <h4>Code & Notebooks</h4>
+         <ol>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/scibert-bilstm">scibert-bilstm for multi-label classification</a></li>
+          <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/scibert-dual-input">scibert-dual inputs for multi-label classification</a></li>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/scibert">scibert-base for multi-label classification</a></li>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/scibert-gradient-boosting">scibert-gradient boosting for multi-label classification</a></li>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/scibert-xlnet-ensemble">scibert-xlnet ensemble for multi-label classification</a></li>
          </ol>
        </li>
      </ul>
