@@ -57,9 +57,17 @@ Note that a research article can possibly have more than 1 topic. The research a
           <ol>
             <li>Pooled outputs(roberta-base) + Classification Layer</li>
             <li>Pooled outputs(roberta-large) + Classification Layer</li>
-            <li>Sequence outputs + Spatial dropout + Mean & Max pooling + Classification layer</li> 
+            <li>Dual input + Single head + Concatenation + Classification Layer</li> 
           </ol>
-       <\li>
+       </li>
+       <li>
+         <h4>Code & Notebooks</h4>
+         <ol>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/roberta-base">roberta-base for multi-label classification</a></li>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/roberta-large">roberta-large for multi-label classification</a></li>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/roberta-dual-input">Dual input roberta-base for multi-label classification</a></li>
+         </ol>
+       </li>
      </ul>
   </li>
   </ul>
