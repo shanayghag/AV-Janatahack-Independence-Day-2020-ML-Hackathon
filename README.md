@@ -156,7 +156,7 @@ XLnet is an extension of the Transformer-XL model pre-trained using an autoregre
   </li>
   
   <li>
-    <h3>sciBERT</h3>
+    <h3>SciBERT</h3>
      <p>
 It is a BERT model trained on scientific text. SciBERT is trained on papers from the corpus of semanticscholar.org. Corpus size is 1.14M papers, 3.1B tokens
      </p>
@@ -166,8 +166,9 @@ It is a BERT model trained on scientific text. SciBERT is trained on papers from
           <ol>
             <li>Pooled outputs + Classification Head</li>
             <li>Sequence outputs + Spatial dropout + BiLstm + Classification Head</li>
-            <li>Dual inputs(single head) + Pooled outputs + Avg pooling + Conactenation + Classification Head</li>
-            <li>Dual inputs(single head) + Sequence outputs + Bi-GRU + Classification Head</li>
+            <li>Siamese like architecture: Dual inputs(single head) + Pooled outputs + Avg pooling + Concatenation + Classification Head</li>
+            <li>Siamese like architecture: Dual inputs(single head) + Sequence outputs + Bi-GRU + Classification Head</li>
+            <li>Dual inputs(dual head) + Sequence outputs + Avg pooling + Concatenation + Classification Head</li>
             <li>Scibert embeddings + XGBoost</li>
             <li>Scibert embeddings + LGBM</li>
             <li>Scibert + XLNet</li>
