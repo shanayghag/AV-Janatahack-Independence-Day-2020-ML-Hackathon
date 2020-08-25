@@ -37,8 +37,20 @@ Note that a research article can possibly have more than 1 topic. The research a
             <li>Sequence outputs + Spatial dropout + Mean & Max pooling + Classification layer</li> 
           </ol>
         </li>
+        <li>
+          <h4>Code & Notebooks</h4>
+          <ol>
+          <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/bert-base">bert-base-uncased for multilabel classification</a></li>
+          </ol>
+        </li>
       <ul>
     </p>
+  </li>
+  <li>
+    <h3>RoBERTa<h3>
+     <p>
+       RoBERTa: A Robustly Optimized BERT Pretraining Approach. It builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates.
+     </p>
   </li>
   </ul>
 </p>
