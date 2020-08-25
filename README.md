@@ -31,7 +31,7 @@ Note that a research article can possibly have more than 1 topic. The research a
       A language representation model, which stands for Bidirectional Encoder Representations from Transformers. BERT is a multi-layer bidirectional Transformer's encoder stack.
       <ul>
         <li>
-          <h4>Architecture for multi-label classification:</h4>
+          <h4>Architectures for multi-label classification:</h4>
           <ol>
             <li>Pooled outputs + Classification Layer</li>
             <li>Sequence outputs + Spatial dropout + Mean & Max pooling + Classification layer</li> 
@@ -51,6 +51,16 @@ Note that a research article can possibly have more than 1 topic. The research a
      <p>
        RoBERTa: A Robustly Optimized BERT Pretraining Approach. It builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates.
      </p>
+     <ul>
+       <li>
+         <h4>Architectures for multi-label classification:</h4>
+          <ol>
+            <li>Pooled outputs(roberta-base) + Classification Layer</li>
+            <li>Pooled outputs(roberta-large) + Classification Layer</li>
+            <li>Sequence outputs + Spatial dropout + Mean & Max pooling + Classification layer</li> 
+          </ol>
+       <\li>
+     </ul>
   </li>
   </ul>
 </p>
