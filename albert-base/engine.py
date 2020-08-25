@@ -6,7 +6,7 @@ def loss_fn(outputs, targets):
 
 def train(epoch, model, training_loader, device, optimizer, scheduler):
     model.train()
-    for _,data in tqdm(enumerate(training_loader, 0), total=len(training_loader)):
+    for _,data in enumerate(training_loader, 0):
         ids = data['ids'].to(device, dtype = torch.long)
         mask = data['mask'].to(device, dtype = torch.long)
         token_type_ids = data['token_type_ids'].to(device, dtype = torch.long)
@@ -29,7 +29,7 @@ def validation(epoch, model,testing_loader,device):
     fin_targets=[]
     fin_outputs=[]
     with torch.no_grad():
-        for _, data in tqdm(enumerate(testing_loader, 0), total=len(testing_loader)):
+        for _, data in enumerate(testing_loader, 0):
             ids = data['ids'].to(device, dtype = torch.long)
             mask = data['mask'].to(device, dtype = torch.long)
             token_type_ids = data['token_type_ids'].to(device, dtype = torch.long)
