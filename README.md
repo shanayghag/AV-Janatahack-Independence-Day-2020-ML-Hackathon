@@ -70,6 +70,90 @@ Note that a research article can possibly have more than 1 topic. The research a
        </li>
      </ul>
   </li>
+  
+  <li>
+    <h3>ALBERT</h3>
+     <p>
+       ALBERT: A Lite BERT for Self-supervised Learning of Language Representations. ALBERT uses repeating layers which results in a small memory footprint, however the computational cost remains similar to a BERT-like architecture with the same number of hidden layers as it has to iterate through the same number of (repeating) layers.
+     </p>
+     <ul>
+       <li>
+         <h4>Architectures for multi-label classification:</h4>
+          <ol>
+            <li>Pooled outputs(albert-base-v2) + Classification Layer</li>
+          </ol>
+       </li>
+       <li>
+         <h4>Code & Notebooks</h4>
+         <ol>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/albert-base">albert-base for multi-label classification</a></li>
+         </ol>
+       </li>
+     </ul>
+  </li>
+  
+  <li>
+    <h3>Longformer</h3>
+     <p>
+       Transformer-based models are unable to process long sequences due to their self-attention operation, which scales quadratically with the sequence length. To address this limitation, we introduce the Longformer with an attention mechanism that scales linearly with sequence length, making it easy to process documents of thousands of tokens or longer.
+     </p>
+     <ul>
+       <li>
+         <h4>Architectures for multi-label classification:</h4>
+          <ol>
+            <li>Pooled outputs(allenai/longformer-base-4096) + Classification Layer</li>
+          </ol>
+       </li>
+       <li>
+         <h4>Code & Notebooks</h4>
+         <ol>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/longformer">longformer-base for multi-label classification</a></li>
+         </ol>
+       </li>
+     </ul>
+  </li>
+  
+  <li>
+    <h3>T5</h3>
+     <p>
+T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervised and supervised tasks and for which each task is converted into a text-to-text format. T5 works well on a variety of tasks out-of-the-box by prepending a different prefix to the input corresponding to each task, e.g.: for translation: translate English to German, etc.
+     </p>
+     <ul>
+       <li>
+         <h4>Architectures for multi-label classification:</h4>
+          <ol>
+            <li>Complete Text-to-Text Transformer(encoder stack + decoder stack)</li>
+          </ol>
+       </li>
+       <li>
+         <h4>Code & Notebooks</h4>
+         <ol>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/blob/master/t5-base">T5 for multi-label classification</a></li>
+         </ol>
+       </li>
+     </ul>
+  </li>
+  
+   <li>
+    <h3>XLNet</h3>
+     <p>
+XLnet is an extension of the Transformer-XL model pre-trained using an autoregressive method to learn bidirectional contexts by maximizing the expected likelihood over all permutations of the input sequence factorization order.
+     </p>
+     <ul>
+       <li>
+         <h4>Architectures for multi-label classification:</h4>
+          <ol>
+            <li>Pooled outputs + Classification Head</li>
+          </ol>
+       </li>
+       <li>
+         <h4>Code & Notebooks</h4>
+         <ol>
+           <li><a href="https://github.com/shanayghag/AV-Janatahack-Independence-Day-2020-ML-Hackathon/tree/master/xlnet-base">xlnet for multi-label classification</a></li>
+         </ol>
+       </li>
+     </ul>
+  </li>
   </ul>
 </p>
 </p>
