@@ -111,7 +111,7 @@ Note that a research article can possibly have more than 1 topic. The research a
      </p>
      <ul>
        <li>
-         <h4>Architectures for multi-label classification:</h4>
+         <h4>Architecture for multi-label classification:</h4>
           <ol>
             <li>Pooled outputs(allenai/longformer-base-4096) + Classification Layer</li>
           </ol>
@@ -132,7 +132,7 @@ T5 is an encoder-decoder model pre-trained on a multi-task mixture of unsupervis
      </p>
      <ul>
        <li>
-         <h4>Architectures for multi-label classification:</h4>
+         <h4>Architecture for multi-label classification:</h4>
           <ol>
             <li>Complete Text-to-Text Transformer(encoder stack + decoder stack)</li>
           </ol>
@@ -153,7 +153,7 @@ XLnet is an extension of the Transformer-XL model pre-trained using an autoregre
      </p>
      <ul>
        <li>
-         <h4>Architectures for multi-label classification:</h4>
+         <h4>Architecture for multi-label classification:</h4>
           <ol>
             <li>Pooled outputs +Classification layer</li>
           </ol>
