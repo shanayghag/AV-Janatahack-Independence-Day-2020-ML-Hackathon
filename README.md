@@ -1,5 +1,5 @@
 # AV-Janatahack-Independence-Day-2020-ML-Hackathon
-<img src="https://img.shields.io/badge/Hugging%20face-Transformers-orange"> <img src="https://img.shields.io/badge/Python-3.7-blue"> <img src="https://img.shields.io/badge/torch-1.5.1-red"><br>
+<a href="https://huggingface.co/transformers/"><img src="https://img.shields.io/badge/Hugging%20face-Transformers-orange"></a> <a href="https://www.python.org/downloads/release/python-378/"><img src="https://img.shields.io/badge/Python-3.7-blue"></a> <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/torch-1.5.1-red"></a><br>
 Code implemented during the hackathon
 
 <p>
