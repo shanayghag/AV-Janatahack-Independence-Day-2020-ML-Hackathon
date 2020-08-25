@@ -14,6 +14,3 @@ class AlbertClass(torch.nn.Module):
         output = self.linear(output)
 
         return output
-
-model = AlbertClass()
-model.to(device)
