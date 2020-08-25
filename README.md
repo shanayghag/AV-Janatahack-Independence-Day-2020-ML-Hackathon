@@ -143,7 +143,7 @@ XLnet is an extension of the Transformer-XL model pre-trained using an autoregre
        <li>
          <h4>Architectures for multi-label classification:</h4>
           <ol>
-            <li>Pooled outputs + Classification Head</li>
+            <li>Pooled outputs +Classification layer</li>
           </ol>
        </li>
        <li>
@@ -164,11 +164,11 @@ It is a BERT model trained on scientific text. SciBERT is trained on papers from
        <li>
          <h4>Architectures for multi-label classification:</h4>
           <ol>
-            <li>Pooled outputs + Classification Head</li>
-            <li>Sequence outputs + Spatial dropout + BiLstm + Classification Head</li>
-            <li>Siamese like architecture: Dual inputs(single head) + Pooled outputs + Avg pooling + Concatenation + Classification Head</li>
-            <li>Siamese like architecture: Dual inputs(single head) + Sequence outputs + Bi-GRU + Classification Head</li>
-            <li>Dual inputs(dual head) + Sequence outputs + Avg pooling + Concatenation + Classification Head</li>
+            <li>Pooled outputs + Classification layer</li>
+            <li>Sequence outputs + Spatial dropout + BiLstm + Classification layer</li>
+            <li>Siamese like architecture: Dual inputs(single head) + Pooled outputs + Avg pooling + Concatenation + Classification layer</li>
+            <li>Siamese like architecture: Dual inputs(single head) + Sequence outputs + Bi-GRU + Classification layer</li>
+            <li>Dual inputs(dual head) + Sequence outputs + Avg pooling + Concatenation + Classification layer</li>
             <li>Scibert embeddings + XGBoost</li>
             <li>Scibert embeddings + LGBM</li>
             <li>Scibert + XLNet</li>
