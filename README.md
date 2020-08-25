@@ -188,4 +188,97 @@ It is a BERT model trained on scientific text. SciBERT is trained on papers from
   </li>
   </ul>
 </p>
+
+<p>
+  <h2>Comparisons :</h2>
+  <table>
+   <thead>
+     <td>Model</td>
+     <td>Public LB f1-micro</td>
+     <td>Private LB f1-micro</td>
+   </thead>
+  <tbody>
+    <tr>
+      <td>bert-base-uncased</td>
+      <td>0.828077</td>
+      <td>0.827281</td>
+    </tr>
+    <tr>
+      <td>albert-base-v2</td>
+      <td>0.824307</td>
+      <td>0.824409</td>
+    </tr>
+    <tr>
+      <td>longformer-base-4096</td>
+      <td>0.833407</td>
+      <td>0.834856</td>
+    </tr>
+    <tr>
+      <td>roberta-base</td>
+      <td>0.810430</td>
+      <td>0.807715</td>
+    </tr>
+    <tr>
+      <td>siamese-roberta-base</td>
+      <td>0.831624</td>
+      <td>0.832628</td>
+    </tr>
+    <tr>
+      <td>roberta-large</td>
+      <td>0.823807</td>
+      <td>0.829286</td>
+    </tr>
+    <tr>
+      <td>xlnet</td>
+      <td>0.835541</td>
+      <td>0.837154</td>
+    </tr>
+    <tr>
+      <td>t5</td>
+      <td>0.824055</td>
+      <td>0.823033</td>
+    </tr>
+    <tr>
+      <td>scibert</td>
+      <td>0.845831</td>
+      <td>0.849557</td>
+    </tr>
+    <tr>
+      <td>scibert + lgbm</td>
+      <td>0.841710</td>
+      <td>0.845912</td>
+    </tr>
+    <tr>
+      <td>scibert + xgboost</td>
+      <td>0.844890</td>
+      <td>0.849602</td>
+    </tr>
+    <tr>
+      <td>siamese-scibert + gru</td>
+      <td>0.845310</td>
+      <td>0.853427</td>
+    </tr>
+    <tr>
+      <td>scibert + bilstm</td>
+      <td>0.846365</td>
+      <td>0.849017</td>
+    </tr>
+    <tr>
+      <td>scibert-fft</td>
+      <td>0.845831</td>
+      <td>0.849557</td>
+    </tr>
+    <tr>
+      <td>avg-blend</td>
+      <td>0.853915</td>
+      <td>0.857981</td>
+    </tr>
+    <tr>
+      <td>weighted-avg-blend</td>
+      <td>0.854491</td>
+      <td>0.858294</td>
+    </tr>
+  </tbody>
+  </table>
+</p>
 </p>
