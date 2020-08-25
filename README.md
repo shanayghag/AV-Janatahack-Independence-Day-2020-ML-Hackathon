@@ -246,7 +246,7 @@ It is a BERT model trained on scientific text. SciBERT is trained on papers from
       <td>0.837154</td>
     </tr>
     <tr>
-      <td>t5</td>
+      <td>t5-base</td>
       <td>0.824055</td>
       <td>0.823033</td>
     </tr>
