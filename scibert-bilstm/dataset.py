@@ -1,6 +1,6 @@
 import torch
 
-class CustomDataset(Dataset):
+class CustomDataset:
 
     def __init__(self, dataframe, tokenizer, max_len):
         self.tokenizer = tokenizer
