@@ -1,6 +1,7 @@
 import torch
 import transformers
 
+
 class BERTBaseClass(torch.nn.Module):
     def __init__(self):
         super(BERTBaseClass, self).__init__()
@@ -10,7 +11,10 @@ class BERTBaseClass(torch.nn.Module):
 
     def forward(self, ids, mask, token_type_ids):
         # Using the pooled outputs from bert
-        _, output_1 = self.bert(ids, attention_mask=mask, token_type_ids=token_type_ids)
-        output_2 = self.drop(output_1)
-        output = self.linear(output_2)
+        outputs = self.bert(ids, attention_mask=mask,
+                            token_type_ids=token_type_ids)
+
+        output = outputs.pooler_output
+        output = self.drop(output)
+        output = self.linear(output)
         return output
